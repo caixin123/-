@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>About Harley-Davidson | 哈雷戴维森中国</title>
+		<link rel="icon" href="img/logo.gif" />
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			header{
+				width: 1300px;
+				height: 120px;
+				left: 50%;
+				margin-left: -650px;
+				background-color: black;
+				position: relative;
+				z-index: 99;
+			}
+			.logo{
+				width: 120px;
+				height: 100px;
+				padding: 10px 0 0 20px;
+			}
+			.small{
+				width: 160px;
+				height: 21px;
+				position: absolute;
+				left: 180px;
+				top: 40px;
+				color: white;
+				font-size: 16px;
+				font-weight: 600;
+				cursor: pointer;
+			}
+			.small span{
+				padding-right: 30px;
+				padding-bottom: 30px;
+			}
+			.small span:hover{
+				color: #ff6600;
+				transition: all 0.8s ease;
+			}
+			.small a{
+				text-decoration: none;
+				color: white
+			}
+			.small a:hover{
+				color: #ff6600;
+				transition: all 0.8s ease;
+			}
+			
+			.small_two ul{
+				width: 120px;
+				height: 100px;
+				opacity: 0.7;
+				background-color: black;
+				font-size: 14px;
+				font-weight: 100;
+				text-align: center;
+				position: absolute;
+				left: 55px;
+				top: 20px;
+				display: none;
+			}
+			.small_two ul li{
+				list-style: none;
+				margin-top: 8px;
+			}
+			.small_two:hover ul{
+				display: block;
+			}
+			.about{
+				width: 400px;
+				height: 100px;
+				float: right;
+				position: relative;
+				top: -95px;
+				z-index: 10;
+			}
+			.about_top{
+				width: 290px;
+				margin-left: 104px;
+				font-size: 14px;
+				color: whitesmoke;
+			}
+			
+			.about_top_one{
+				display: flex;
+				list-style: none;
+			}
+			.about_top_one a{
+				text-decoration: none;
+				color: whitesmoke;
+			}
+			.about_top_one li{
+				cursor: pointer;
+				margin: 0 10px 5px 10px;
+			}
+			.about_top_one li:hover{
+				color: #ff6600;
+				transition: all 0.8s ease;
+			}
+			.about_top_one a:hover{
+				color: #ff6600;
+				transition: all 0.8s ease;
+			}
+			.about_top_one_two{
+				height: 25px;
+				padding-right: 25px;
+				border-right: 1px solid whitesmoke;
+			}
+			
+			.about_botton{
+				width: 390px;
+				height: 40px;
+				font-size: 18px;
+				color: white;
+				
+			}
+			.about_botton ul{
+				
+				list-style: none;
+			}
+			.about_botton ul li{
+				display: inline-block;
+				margin-left: 20px;
+				cursor: pointer;
+			}
+			.about_botton ul li:hover{
+				color: #ff6600;
+				transition: all 0.8s ease;
+			}
+			
+			.about_us ul{
+				width: 130px;
+				position: absolute;
+				opacity: 0.7;
+				background-color: black;
+				left: 80px;
+				text-align: center;
+				color: orangered;
+				font-size: 12px;
+				display: none;
+			}
+			.about_us:hover>ul{
+				transition: all 0.8s ease;
+				display: block;
+			}
+			.about_us ul li{
+				list-style: none;
+				margin: 3px 0;
+			}
+			
+			.about_botton ul li ul{
+				width: 120px;
+				height: 60px;
+				opacity: 0.7;
+				background-color: black;
+				position: absolute;
+				
+			}
+			.about_botton ul li{
+				padding-bottom: 20px;
+			}
+			.about_botton ul li ul li{
+				width: 85px;
+				text-align: center;
+				
+				font-size: 14px;
+				padding-bottom: 5px;
+				position: absolute;
+				z-index: 10;
+			}
+			.about_botton ul li ul li:nth-of-type(2){
+				top: 30px;
+			}
+			.about_botton ul li ul li a{
+				color: white;
+				text-decoration: none;
+			}
+			.about_botton ul li ul li a:hover{
+				color: #FF4500;
+			}
+			.about_botton_one{
+				display: none;
+				left: 7px;
+				top: 65px;
+			}
+			.about_botton_two{
+				display: none;
+				left: 110px;
+				top: 65px;
+			}
+			.about_botton_three{
+				display: none;
+				left: 195px;
+				top: 65px;
+			}
+			.about_botton_four{
+				display: none;
+				left: 280px;
+				top: 65px;
+			}
+			.about_botton ul li:hover>ul{
+				transition: all 0.8s ease;
+				display: block;
+			}
+			/* h2 */
+			h2{
+				font-size: 40px;
+			}
+			section{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			/* 我们的企业 */
+			.section_one{
+				width: 1200px;
+				height: 480px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.section_one_one{
+				width: 400px;
+				height: 200px;
+				position: absolute;
+				left: 100px;
+				top: 100px;
+			}
+			.section_one_one p{
+				color: white;
+				font-size: 45px;
+				font-weight: 600;
+				padding-bottom: 20px;
+			}
+			.section_one_one span{
+				color: white;
+				font-size: 17px;
+				font-weight: 600;
+			}
+			.section_one_two{
+				width: 700px;
+				height: 400px;
+				position: absolute;
+				z-index: 10;
+				left: 400px;
+				top: -50px;
+			}
+			.section_one_two img{
+				width: 700px;
+				height: 500px;
+			}
+			.section_one_three{
+				width: 1200px;
+				height: 50px;
+				margin: 0 auto;
+				background-color: #fff;
+				position: absolute;
+				top: 430px;
+			}
+			/* 我们的战略 */
+			 .banner{
+				width:1200px;
+				height:50px;
+				background-color: #DCDCDC;
+				opacity: 0.9;
+				font-size: 13px;
+				margin: 0 auto;
+				text-align: center;
+				z-index: 99;
+
+			}
+			.banner ul{
+				width:450px;
+				height:50px;
+				margin: 0 auto;
+				text-align: center;
+				display: flex;
+			}
+			.banner ul li{
+				list-style:none;
+				line-height:50px;
+				padding: 0px 20px;
+			}
+			.banner ul li a:hover{
+				color: #FF4500;
+				font-weight: 600;
+			}
+			.banner ul li a{
+				color:black;
+				text-decoration:none;
+			}
+
+			/* 全心追逐自由 */
+			.section_three{
+				width: 700px;
+				margin: 0 auto;
+				padding-top: 50px;
+			}
+			.heng{
+				width: 50px;
+				height: 6px;
+				background-color: #FF4500;
+				margin: 30px 0px 10px 0px;
+			}
+			.section_three p{
+				font-size: 16px;
+				padding: 20px 0px;
+			}
+			.section_three img{
+				width: 700px;
+				height: 400px;
+				padding: 40px 0px;
+			}
+			/* 我们的战略 */
+			.section_four{
+				width: 700px;
+				margin: 0 auto;
+			}
+			.section_four p:nth-of-type(1){
+				font-size: 16px;
+				padding: 20px 0px;
+				margin-bottom: 40px;
+			}
+			.section_four p:nth-of-type(2){
+				font-size: 16px;
+				font-weight: 600;
+				padding: 20px 0px;
+			}
+			.section_four_div{
+				height: 160px;
+				margin-top: 30px;
+				position: relative;
+			}
+			
+			.section_four_div_one{
+				position: absolute;
+			}
+			.section_four_div_two{
+				width: 350px;
+				margin-left: 350px;
+				
+			}
+			.section_four_div_two p{
+				font-size: 14px;
+				font-weight: 500;
+			}
+			
+			/* 我们的业务 */
+			.section_five{
+				width: 700px;
+				margin: 0 auto;
+				padding-top: 50px;
+			}
+			.section_five p{
+				font-size: 16px;
+				padding: 20px 0px;
+			}
+			.section_five img{
+				width: 700px;
+				height: 400px;
+				padding: 40px 0px;
+			}
+			/* 我们的职责 */
+			.section_six{
+				width: 700px;
+				margin: 0 auto;
+				padding-top: 50px;
+			}
+			.section_six h2{
+				margin: 20px 0px 30px 0px;
+			}
+			.section_six_div{
+				position: relative;
+			}
+			.section_six_div img{
+			}
+			.section_six_div_one{
+				position: absolute;
+				top: 50px;
+				
+			}
+			.section_six_div_two{
+				width: 300px;
+				height: 270px;
+				margin-left: 400px;
+			}
+			.section_six_div_two p{
+				font-size: 15px;
+				font-weight: 600;
+				margin-top: 20px;
+				margin-bottom: 10px;
+			}
+			.section_six_div_two ul{
+				margin-left: 20px;
+			}
+			
+			/* 我们如何进入市场 */
+			.section_sevent{
+				width: 1200px;
+				height: 600px;
+				background-color: #DCDCDC;
+				margin: 0 auto;
+				position: relative;
+			}
+			.section_sevent_one{
+				margin-left: 50px;
+				padding-top: 50px;
+				width: 370px;
+				height: 500px;
+				
+			}
+			
+			.section_sevent_one p:nth-of-type(1){
+				font-size: 15px;
+				font-weight: 600;
+				padding: 50px 0px 25px 0px;
+			}
+			.section_sevent_one p:nth-of-type(2){
+				font-size: 15px;
+				font-weight: 600;
+				padding: 0px 0px 40px 0px;
+			}
+			.section_sevent_two{
+				position: absolute;
+				left: 450px;
+				top: 100px;
+			}
+			.section_sevent_two img{
+				width: 700px;
+				height: 450px;
+			}
+			.section_sevent a{
+				padding: 10px 30px;
+				background-color: black;
+				text-decoration: none;
+				color: #A9A9A9;
+			}
+			.section_sevent a:hover{
+				color: black;
+				background-color: #FF6600;
+				transition: all 0.8s ease;
+			}
+			/* 我们的客户 */
+			.section_eight{
+				width: 700px;
+				height: 220px;
+				margin: 0 auto;
+			}
+			.section_eight h2{
+				padding: 10px 0px 20px 0px;
+			}
+			
+			/* 我们的领导层 */
+			.section_nine{
+				width: 700px;
+				height: 500px;
+				margin: 0 auto;
+			}
+			.section_nine h2{
+				text-align: center;
+				padding: 0px 0px 20px 0px;
+			}
+			.section_nine p{
+				text-align: center;
+				font-size: 14px;
+				font-weight: 600;
+			}
+			.section_nine div{
+				padding: 30px 0px;
+				width: 180px;
+				height: 50px;
+				margin: 0 auto;
+			}
+			.section_nine a{
+				text-decoration: none;
+				color: #DCDCDC;
+				padding: 10px 50px;
+				background-color: black;
+			}
+			.section_nine a:hover{
+				color: black;
+				background-color: #FF6600;
+				transition: all 0.8s ease;
+			}
+			.section_nine ul{
+				list-style: none;
+				font-size: 14px;
+				font-weight: 600;
+			}
+			.section_nine ul li{
+				padding: 15px 0px 15px 0px;
+				border-bottom: 2px solid #DCDCDC;
+			}
+			/* 尾 */
+			.footer{
+				width: 1200px;
+				height: 500px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			.footer_top{
+				width: 1200px;
+				height: 200px;
+				margin-top: 50px;
+			}
+			.footer_top span{
+				font-size: 25px;
+				font-weight: 600;
+			}
+			.footer_top_span_one{
+				color: white;	
+			}
+			.footer_top_span_two{
+				color: #f60;
+			}
+			.footer_top select{
+				width: 300px;
+				height: 40px;
+				outline:none;
+				margin: 30px 0px;
+				padding: 10px 15px;
+				background-color: black;
+				color: white;
+				text-align: center;
+				border: 1px white solid;
+			}
+			.footer_bottom{
+				width:  1200px;
+			}
+			.footer_bottom ul{
+				width: 550px;
+				height: 20px;
+				margin: 0 auto;
+				color: white;
+				list-style: none;
+				display: flex;
+				font-size: 13px;
+				padding-bottom: 30px;
+			}
+			.footer_bottom ul li{
+				padding: 0px 8px;
+				border-right: 1px solid white;
+			}
+			.footer_bottom ul li:nth-of-type(7){
+				border-right: none;
+			}
+			.footer_bottom ul li a{
+				text-decoration: none;
+				color: darkgray;
+			}
+			.footer_bottom ul li a:hover{
+				color: coral;
+				transition: all 0.8s ease;
+			}
+			.footer_bottom p{
+				color: darkgray;
+				font-size: 12px;
+				padding: 20px 0px;
+			}
+			.footer_bottom_p_three{
+				color: coral!important;
+			}
+			
+			
+			
+			.fixDiv{
+				width: 1200px;
+				margin: 0 auto;
+			   position:fixed;
+			    top:0;
+			    
+			}
+			/* 回到顶部 */
+			.scroll_top{
+				width: 100px;
+				height: 40px;
+				color: white;
+				background-color: rgba(255,255,255,0.5);
+				border: none;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body style="background-color: black;">
+		<header>
+			<div class="logo">
+				<a href="1.html"><img src="img/logo.gif" /></a>
+			</div>
+			<div class="small">
+				<span><a href="motuoche.html">摩托车</a></span>
+				<span class="small_two">选购方案
+					<ul>
+						<li><a href="chaxunjingxiaoshnag.html">预约试驾</a></li>
+						<li><a href="chaxunjingxiaoshnag.html">查询经销商</a></li>
+						<li><a href="chaxunjingxiaoshnag.html">电子手册</a></li>
+					</ul>
+				</span>
+			</div>
+			<div class="about">
+				<div class="about_top">
+					<ul class="about_top_one">
+						<li class="about_us">关于我们
+							<ul style="">
+								<li><a href="usqiye.html">我们的企业</a></li>
+								<li><a href="usqiye.html">职业生涯</a></li>
+								<li><a href="usqiye.html">投资人</a></li>
+								<li><a href="usqiye.html">我们的责任</a></li>
+								<li><a href="usqiye.html">成为经销商</a></li>
+								<li><a href="usqiye.html">新闻中心</a></li>
+								<li><a href="usqiye.html">欢迎参观</a></li>
+								<li><a href="usqiye.html">联系我们</a></li>
+							</ul>
+						</li>
+						<li class="about_top_one_two"><a href="">试驾</a></li>
+						<li><a href="">经销商查询</a></li>
+						<li>登录</li>
+					</ul>
+					
+				</div>
+				<div class="about_botton">
+					<ul>
+						<li>零件与服饰
+							<ul class="about_botton_one">
+								<li><a href="lingjian.html">部件与配件</a></li>
+								<li><a href="lingjian.html">服饰与精品</a></li>
+							</ul>
+						</li>
+						<li>骑行学院
+							<ul class="about_botton_two">
+								<li><a href="parrty.html">骑行学院派对</a></li>
+								<li><a href="parrty.html">基础课程</a></li>
+							</ul>
+						</li>
+						<li>活动
+							<ul class="about_botton_three">
+								<li><a href="">活动日历</a></li>
+								<li><a href="">115周年庆</a></li>
+							</ul>
+						</li>
+						<li>哈雷车主会
+							<ul class="about_botton_four">
+								<li><a href="">哈雷车主会</a></li>
+								<li><a href="">会员活动回顾</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!-- 我们的企业 -->
+		<section class="section_one">
+			<div class="section_one_one">
+				<p>我们的企业</p>
+				<span>我们实现个人追求自由的梦想。</span>
+			</div>
+			<div class="section_one_two">
+				<img src="img/hero-newscompany-landing.png" />
+			</div>
+			<div class="section_one_three"></div>
+		</section>
+		<!-- 我们的战略 -->
+		<div style="width: 1200px; margin: 0 auto; background-color: white;">
+			<div class="banner">
+				<ul>
+					<li ><a href="#stra">我们的战略</a></li>
+					<li><a href="#busin">我们的业务</a></li>
+					<li><a href="#dealer">我们的经销商</a></li>
+					<li><a href="#front">我们的领导层</a></li>
+				</ul>
+			</div>
+			<!-- 全心追逐自由 -->
+			<section class="section_three">
+				<div class="heng"></div>
+				<h2>全心追逐自由。<br />方能尽享自由。</h2>
+				<p>哈雷戴维森以深沉的气度、豪迈的情怀和纯正的风范将来自世界各地的车迷召集在一起。穿越城镇，跨越国度，哈雷戴维森全心追逐自由的理念和自我展现已经超越了文化、性别和年龄的范畴。成为一个典范品牌固然可喜，但点燃骑手心中那团炽热的火焰，让他们疾速驰骋在世界各地的公路上，才是我们一心追逐的目标。</p>
+				<img src="img/long-form-all-for-freedom.jpg" />
+				<p>哈雷戴维森®摩托车的骑手们来自不同的背景。所有骑手，无关年龄、性别和种族，都有一个共同的目标，那就是热爱自由，敢于冒险，推崇哈雷戴维森所代表的价值观——独立、真挚、热爱骑行。</p>
+				<p>我们致力于在全球范围内培养新一代骑手，诚邀拥有相同价值观和渴望骑行看世界的骑手加入。</p>
+				
+			</section>
+			<!-- 我们的战略 -->
+			<section class="section_four" id="stra" style="padding-top: 30px;">
+				<div class="heng"></div>
+				<h2>我们的战略</h2>
+				<p >我们正在全球范围内培养新一代骑手，让你跨上哈雷戴维森摩托车猛加油门时便可体验到那种追逐自由的豪放情怀。</p>
+				<p>我们制定的2027年目标就如同品牌本身一样引人注目：</p>
+				<div class="section_four_div">
+					<div class="section_four_div_one">
+						<img src="img/long-form-strategy-1.png" />
+					</div>
+					<div class="section_four_div_two">
+						<h4>在美国境内培养两百万名新骑手</h4>
+						<p>只有培养新骑手，才能将我们的骑行精神传承至下个世纪甚至更远的未来。我们眼下正着力培养新一代骑手，由他们继承我们的运动精神和品牌理念。</p>
+					</div>
+				</div>
+				<div class="section_four_div">
+					<div class="section_four_div_one">
+						<img src="img/long-form-strategy-2.png" />
+					</div>
+					<div class="section_four_div_two">
+						<h4>将国际业务在年销量中所占比例提升至50%</h4>
+						<p>我们在全球发达国家和新兴市场拥有无限的商机，哈雷戴维森品牌在这些市场内所占优势丝毫不逊于美国。在全球培养新一代骑手的同时，我们正着眼于提升自己在这些市场中的影响力和品牌知名度。</p>
+					</div>
+				</div>
+				<div class="section_four_div">
+					<div class="section_four_div_one">
+						<img src="img/long-form-strategy-3.png" />
+					</div>
+					<div class="section_four_div_two">
+						<h4>推出100款影响深远的全新哈雷戴维森®摩托车</h4>
+						<p>我们制定了有史以来最宏伟的产品计划，向全世界展示新品的心情已迫不及待。典范车型，影响深远，将竞争激烈的产品市场重整划分。</p>
+					</div>
+				</div>
+				<div class="section_four_div">
+					<div class="section_four_div_one">
+						<img src="img/long-form-strategy-4.png" />
+					</div>
+					<div class="section_four_div_two">
+						<h4>为HDMC提供可观的投资资本回报率</h4>
+						<p>为股东提供可观的利润回报一直是我们最重要的核心竞争力之一，而且在将来也是。</p>
+					</div>
+				</div>
+				<div class="section_four_div">
+					<div class="section_four_div_one">
+						<img src="img/long-form-strategy-5.png" />
+					</div>
+					<div class="section_four_div_two">
+						<h4>扩大经营，同时注重环境影响</h4>
+						<p>我们还将不断提高自己的环境和社会责任心，密切关注自己对于地球和社会造成的影响。</p>
+					</div>
+				</div>
+				<p>想要了解更多详情，敬请参阅我们的<a href="">公司战略PDF</a>。</p>
+			</section>
+			
+			<!-- 我们的业务 -->
+			<section class="section_five" id="busin" style="padding-top: 30px;">
+				<div class="heng"></div>
+				<h2>我们的业务</h2>
+				<p>我们致力于实现个人追逐自由的梦想——这是我们的目标，我们必定认真对待。自由，对于不同的人而言有着不同的涵义，却将哈雷戴维森的客户、员工、经销商、供应商和发烧友密切联系在一起。</p>
+				<img src="img/long-form-our-business.png" />
+				<p>哈雷戴维森公司拥有一系列子公司，如哈雷戴维森摩托车公司（HDMC）和哈雷戴维森金融服务部（HDFS）。</p>
+			</section>
+			
+			<!-- 我们的职责 -->
+			<section class="section_six">
+				<div class="heng"></div>
+				<h2>我们的职责</h2>
+				<div class="section_six_div">
+					<div class="section_six_div_one">
+						<img src="img/long-form-harley-logo.png" />
+					</div>
+					<div class="section_six_div_two">
+						<p>哈雷戴维森制造和销售定制车型、巡航车型和旅行车型，它们风格前卫，设计新颖，声响独特，品质出众，还可以接受个性化改装。</p>
+						<p>我们还提供：</p>
+						<ul>
+							<li>骑行体验和活动</li>
+							<li>改装摩托车所需的配件</li>
+							<li>为骑手及乘客打造的骑行服饰和装备</li>
+							<li>为骑手、乘客及发烧友打造的休闲服饰和配饰</li>
+							<li>摩托车维修件</li>
+						</ul>
+					</div>
+				</div>
+				<div class="section_six_div">
+					<div class="section_six_div_one">
+						<img src="img/long-form-logo.png" />
+					</div>
+					<div class="section_six_div_two">
+						<p>哈雷戴维森金融服务部提供一整套贷款方案和保险产品与服务，助力客户轰鸣上路，纵横驰骋。HDFS为经销商和客户提供：</p>
+						<ul>
+							<li>批发和零售贷款服务</li>
+							<li>保险</li>
+							<li>延长服务及其他保护计划</li>
+							<li>信用卡方案</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			
+			<!-- 我们如何进入市场 -->
+			<section class="section_sevent" id="dealer" style="padding-top: 30px;">
+				<div class="section_sevent_one">
+					<div class="heng"></div>
+					<h2>我们如何进入市场</h2>
+					<p>我们的产品通过一个覆盖全球的独立经销商网络进行分销，其中大部分经销商专门从事哈雷戴维森®产品的销售，提供世界一流的客户服务和体验。</p>
+					<p>我们在近100个国家拥有1400多家独立经营的哈雷戴维森®经销商。他们忠于职守，持之以恒，为我们敬爱的客户营造无与伦比的骑行体验。经销商是我们的品牌形象宣传大使，创造出与客户相伴一生的体验和纽带。</p>
+					<a href="chaxunjingxiaoshnag.html">查询经销商</a>
+				</div>
+				<div class="section_sevent_two">
+					<img src="img/billboard-how-we-go-to-market.gif" />
+				</div>
+			</section>
+			<!-- 我们的客户 -->
+			<section class="section_eight">
+				<div class="heng"></div>
+				<h2>我们的客户</h2>
+				<p>我们致力于拓展自己在美国境内的客户群体，同时扩大境外影响力，并以此为契机制定了客户导向方案，旨在更加深入地了解客户人生阶段和文化转变。这些真知灼见促成了一套信息更丰富和针对性更强的营销和产品研发方案，有助于我们继续拓展客户群体，在全球范围内培养新一代骑手。</p>
+			</section>
+				
+			<!-- 我们的领导层 -->
+			<section class="section_nine" id="front" style="padding-top: 50px;">
+				<h2>我们的领导层</h2>
+				<p>认识哈雷戴维森公司的高管和董事会</p>
+				<div>
+					<a href="">了解更多</a>
+				</div>
+				<ul>
+					<li>我们的责任</li>
+					<li>职业生涯</li>
+					<li>成为经销商</li>
+					<li>欢迎参观</li>
+				</ul>
+			</section>	
+			
+		</div>
+		
+		
+		<!-- 尾 -->
+		<footer class="footer">
+			<div class="footer_top">
+				<span class="footer_top_span_one">哈雷戴维森</span>
+				<span class="footer_top_span_two">中国</span>
+				<br />
+				<select>
+					<option selected="selected" disabled="disabled">转换地区</option>
+					<option value ="">Argentina – español</option>
+					<option value ="">Algeria – English</option>
+					<option value ="">Aruba – English</option>
+					<option value ="">Australia – English</option>
+					<option value ="">Azərbaycan – Русский</option>
+					<option value ="">Bahamas – English</option>
+					<option value ="">Bahrain – English</option>
+					<option value ="">Barbados – English</option>
+					<option value ="">Беларусь – Русский</option>
+					<option value ="">België – Nederlands</option>
+					<option value ="">Belgique – français</option>
+					<option value ="">Belize – English</option>
+					<option value ="">México – español</option>
+				</select>
+				<p><img src="img/weibo-icon.png" /></p>
+			</div>
+			<div class="footer_bottom">
+				<ul>
+					<li><a href="">网站地图</a></li>
+					<li><a href="">使用条款</a></li>
+					<li><a href="">《隐私政策》</a></li>
+					<li><a href="">我们心系于你</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">新闻中心</a></li>
+					<li><a href="">人才招聘</a></li>
+				</ul>
+				<p><img src="img/small_log.gif"></p>
+				<p>© 2001-2019年，哈雷戴维森(H-D)版权所有。沪ICP备16023812号-3</p>
+				<p class="footer_bottom_p_three">查看所有免责声明</p>
+			</div>
+			
+			<button type="button" class="scroll_top">返回顶部</button>
+		</footer>
+	</body>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script>
+		$(function(){
+			var banOffTop=$(".banner").offset().top;
+			var scTop=0;
+			$(document).scroll(function(){
+				scTop=$(this).scrollTop();
+				if(scTop>=banOffTop){
+					$(".banner").addClass("fixDiv");
+				}else{
+					$(".banner").removeClass("fixDiv");
+				}
+	
+			})
+		})
+	</script>
+	<script>
+		$('.scroll_top').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});     //页面滚动至顶部
+
+	</script>
+</html>

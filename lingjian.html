@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>原厂部件与配件 | 哈雷戴维森中国</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			header{
+				width: 1300px;
+				height: 120px;
+				left: 50%;
+				margin-left: -650px;
+				background-color: black;
+				position: relative;
+				z-index: 99;
+			}
+			.logo{
+				width: 120px;
+				height: 100px;
+				padding: 10px 0 0 20px;
+			}
+			.small{
+				width: 160px;
+				height: 21px;
+				position: absolute;
+				left: 180px;
+				top: 40px;
+				color: white;
+				font-size: 16px;
+				font-weight: 600;
+				cursor: pointer;
+			}
+			.small span{
+				padding-right: 30px;
+				padding-bottom: 30px;
+			}
+			.small span:hover{
+				color: #ff6600;
+				transition: all 0.8s ease;
+			}
+			.small a{
+				text-decoration: none;
+				color: white
+			}
+			.small a:hover{
+				color: #ff6600;
+				transition: all 0.8s ease;
+			}
+			
+			.small_two ul{
+				width: 120px;
+				height: 100px;
+				opacity: 0.7;
+				background-color: black;
+				font-size: 14px;
+				font-weight: 100;
+				text-align: center;
+				position: absolute;
+				left: 55px;
+				top: 20px;
+				display: none;
+			}
+			.small_two ul li{
+				list-style: none;
+				margin-top: 8px;
+			}
+			.small_two:hover ul{
+				display: block;
+			}
+			.about{
+				width: 400px;
+				height: 100px;
+				float: right;
+				position: relative;
+				top: -95px;
+				z-index: 10;
+			}
+			.about_top{
+				width: 290px;
+				margin-left: 104px;
+				font-size: 14px;
+				color: whitesmoke;
+			}
+			
+			.about_top_one{
+				display: flex;
+				list-style: none;
+			}
+			.about_top_one a{
+				text-decoration: none;
+				color: whitesmoke;
+			}
+			.about_top_one li{
+				cursor: pointer;
+				margin: 0 10px 5px 10px;
+			}
+			.about_top_one li:hover{
+				color: #ff6600;
+				transition: all 0.8s ease;
+			}
+			.about_top_one a:hover{
+				color: #ff6600;
+				transition: all 0.8s ease;
+			}
+			.about_top_one_two{
+				height: 25px;
+				padding-right: 25px;
+				border-right: 1px solid whitesmoke;
+			}
+			
+			.about_botton{
+				width: 390px;
+				height: 40px;
+				font-size: 18px;
+				color: white;
+				
+			}
+			.about_botton ul{
+				
+				list-style: none;
+			}
+			.about_botton ul li{
+				display: inline-block;
+				margin-left: 20px;
+				cursor: pointer;
+			}
+			.about_botton ul li:hover{
+				color: #ff6600;
+				transition: all 0.8s ease;
+			}
+			
+			.about_us ul{
+				width: 130px;
+				position: absolute;
+				opacity: 0.7;
+				background-color: black;
+				left: 80px;
+				text-align: center;
+				color: orangered;
+				font-size: 12px;
+				display: none;
+			}
+			.about_us:hover>ul{
+				transition: all 0.8s ease;
+				display: block;
+			}
+			.about_us ul li{
+				list-style: none;
+				margin: 3px 0;
+			}
+			
+			.about_botton ul li ul{
+				width: 120px;
+				height: 60px;
+				opacity: 0.7;
+				background-color: black;
+				position: absolute;
+				
+			}
+			.about_botton ul li{
+				padding-bottom: 20px;
+			}
+			.about_botton ul li ul li{
+				width: 85px;
+				text-align: center;
+				
+				font-size: 14px;
+				padding-bottom: 5px;
+				position: absolute;
+				z-index: 10;
+			}
+			.about_botton ul li ul li:nth-of-type(2){
+				top: 30px;
+			}
+			.about_botton ul li ul li a{
+				color: white;
+				text-decoration: none;
+			}
+			.about_botton ul li ul li a:hover{
+				color: #FF4500;
+			}
+			.about_botton_one{
+				display: none;
+				left: 7px;
+				top: 65px;
+			}
+			.about_botton_two{
+				display: none;
+				left: 110px;
+				top: 65px;
+			}
+			.about_botton_three{
+				display: none;
+				left: 195px;
+				top: 65px;
+			}
+			.about_botton_four{
+				display: none;
+				left: 280px;
+				top: 65px;
+			}
+			.about_botton ul li:hover>ul{
+				transition: all 0.8s ease;
+				display: block;
+			}
+			/* 原厂部件与配件 */
+			.section_one{
+				width: 1200px;
+				height: 480px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.section_one_one{
+				width: 400px;
+				height: 200px;
+				position: absolute;
+				left: 50px;
+				top: 100px;
+			}
+			.section_one_one p{
+				color: white;
+				font-size: 45px;
+				font-weight: 600;
+				padding-bottom: 20px;
+			}
+			.section_one_one span{
+				color: white;
+				font-size: 17px;
+				font-weight: 600;
+			}
+			.section_one_two{
+				width: 700px;
+				height: 400px;
+				position: absolute;
+				z-index: 10;
+				left: 450px;
+				top: -50px;
+			}
+			.section_one_two img{
+				width: 700px;
+				height: 500px;
+			}
+			.section_one_three{
+				width: 1200px;
+				height: 50px;
+				margin: 0 auto;
+				background-color: #fff;
+				position: absolute;
+				top: 430px;
+			}
+			/* 黄线 */
+			.heng{
+				width: 50px;
+				height: 6px;
+				background-color: #FF4500;
+				margin: 0px 0px 20px 0px;
+				margin-top: 30px;
+			}
+			
+			.section_two{
+				width: 700px;
+				margin: 0 auto;
+			}
+			.section_two h2{
+				font-size: 40px;
+				padding-bottom: 10px;
+			}
+			.section_two p{
+				padding-bottom: 40px;
+			}
+			
+			/* 尾 */
+			.footer{
+				width: 1200px;
+				height: 500px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			.footer_top{
+				width: 1200px;
+				height: 200px;
+				margin-top: 50px;
+			}
+			.footer_top span{
+				font-size: 25px;
+				font-weight: 600;
+			}
+			.footer_top_span_one{
+				color: white;	
+			}
+			.footer_top_span_two{
+				color: #f60;
+			}
+			.footer_top select{
+				width: 300px;
+				height: 40px;
+				outline:none;
+				margin: 30px 0px;
+				padding: 10px 15px;
+				background-color: black;
+				color: white;
+				text-align: center;
+				border: 1px white solid;
+			}
+			.footer_bottom{
+				width:  1200px;
+			}
+			.footer_bottom ul{
+				width: 550px;
+				height: 20px;
+				margin: 0 auto;
+				color: white;
+				list-style: none;
+				display: flex;
+				font-size: 13px;
+				padding-bottom: 30px;
+			}
+			.footer_bottom ul li{
+				padding: 0px 8px;
+				border-right: 1px solid white;
+			}
+			.footer_bottom ul li:nth-of-type(7){
+				border-right: none;
+			}
+			.footer_bottom ul li a{
+				text-decoration: none;
+				color: darkgray;
+			}
+			.footer_bottom ul li a:hover{
+				color: coral;
+				transition: all 0.8s ease;
+			}
+			.footer_bottom p{
+				color: darkgray;
+				font-size: 12px;
+				padding: 20px 0px;
+			}
+			.footer_bottom_p_three{
+				color: coral!important;
+			}
+			/* 回到顶部 */
+			.scroll_top{
+				width: 100px;
+				height: 40px;
+				color: white;
+				background-color: rgba(255,255,255,0.5);
+				border: none;
+				cursor: pointer;
+			}
+			
+		</style>
+	</head>
+	<body style="background-color: black;">
+		<header>
+			<div class="logo">
+				<a href="1.html"><img src="img/logo.gif" /></a>
+			</div>
+			<div class="small">
+				<span><a href="motuoche.html">摩托车</a></span>
+				<span class="small_two">选购方案
+					<ul>
+						<li><a href="chaxunjingxiaoshnag.html">预约试驾</a></li>
+						<li><a href="chaxunjingxiaoshnag.html">查询经销商</a></li>
+						<li><a href="chaxunjingxiaoshnag.html">电子手册</a></li>
+					</ul>
+				</span>
+			</div>
+			<div class="about">
+				<div class="about_top">
+					<ul class="about_top_one">
+						<li class="about_us">关于我们
+							<ul style="">
+								<li><a href="usqiye.html">我们的企业</a></li>
+								<li><a href="usqiye.html">职业生涯</a></li>
+								<li><a href="usqiye.html">投资人</a></li>
+								<li><a href="usqiye.html">我们的责任</a></li>
+								<li><a href="usqiye.html">成为经销商</a></li>
+								<li><a href="usqiye.html">新闻中心</a></li>
+								<li><a href="usqiye.html">欢迎参观</a></li>
+								<li><a href="usqiye.html">联系我们</a></li>
+							</ul>
+						</li>
+						<li class="about_top_one_two"><a href="">试驾</a></li>
+						<li><a href="chaxunjingxiaoshnag.html">经销商查询</a></li>
+						<li>登录</li>
+					</ul>
+					
+				</div>
+				<div class="about_botton">
+					<ul>
+						<li>零件与服饰
+							<ul class="about_botton_one">
+								<li><a href="lingjian.html">部件与配件</a></li>
+								<li><a href="lingjian.html">服饰与精品</a></li>
+							</ul>
+						</li>
+						<li>骑行学院
+							<ul class="about_botton_two">
+								<li><a href="parrty.html">骑行学院派对</a></li>
+								<li><a href="parrty.html">基础课程</a></li>
+							</ul>
+						</li>
+						<li>活动
+							<ul class="about_botton_three">
+								<li><a href="">活动日历</a></li>
+								<li><a href="">115周年庆</a></li>
+							</ul>
+						</li>
+						<li>哈雷车主会
+							<ul class="about_botton_four">
+								<li><a href="">哈雷车主会</a></li>
+								<li><a href="">会员活动回顾</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!-- 原厂部件与配件 -->
+		<section class="section_one">
+			<div class="section_one_one">
+				<p>原厂部件与配件</p>
+				<span>哈雷不仅是一辆摩托车，而是您的骑行风格的延伸——请为其添加一分属于自己的定制色彩</span>
+			</div>
+			<div class="section_one_two">
+				<img src="img/hero-original-sizes-landing.gif">
+			</div>
+			<div class="section_one_three"></div>
+		</section>
+		<div style="width: 1200px; margin: 0 auto; background-color: white;">
+			
+			<section class="section_two">
+				<br>
+				<div class="heng"></div>
+				<h2>精工制造 无限可能</h2>
+				<p>以传奇性的精湛工艺和经典样式，哈雷戴维森为您打造原厂摩托车部件及配件。原厂配件专门为彼此配合使用而设计，以构建出完整的定制外观。它们都是按照工厂加工规格和最高的工艺标准制造而成，以确保您每次都能实现完美改装，无一例外。</p>
+				<div class="heng"></div>
+				<h2>如此说来，您想走多远?</h2>
+				<p>如果您想驾车出游，去感受真正的大自然，哈雷戴维森的座椅、鞍囊和挡风玻璃等产品将为您实现舒适度、便捷性和炫酷外形的最佳组合。说到炫酷外形，我们的功能性和装饰性镀铬零配件足以让您所到之处都成为人们关注的焦点——精美的定制漆色甚至足以导致交通堵塞！如果您钟情于更加强悍的动力，Screamin’ Eagle (高性能产品)部件将会让您极速飞驰、血脉贲张。现在就请光临哈雷戴维森当地授权经销商，用哈雷原厂配件与部件，将您的爱车打造成独一无二的铁骑。</p>
+			</section>
+		</div>
+		
+		<div class="style" style="width: 150px;height: 50px;background-color: red;"></div>
+		<!-- 尾 -->
+		<footer class="footer">
+			<div class="footer_top">
+				<span class="footer_top_span_one">哈雷戴维森</span>
+				<span class="footer_top_span_two">中国</span>
+				<br />
+				<select>
+					<option selected="selected" disabled="disabled">转换地区</option>
+					<option value ="">Argentina – español</option>
+					<option value ="">Algeria – English</option>
+					<option value ="">Aruba – English</option>
+					<option value ="">Australia – English</option>
+					<option value ="">Azərbaycan – Русский</option>
+					<option value ="">Bahamas – English</option>
+					<option value ="">Bahrain – English</option>
+					<option value ="">Barbados – English</option>
+					<option value ="">Беларусь – Русский</option>
+					<option value ="">België – Nederlands</option>
+					<option value ="">Belgique – français</option>
+					<option value ="">Belize – English</option>
+					<option value ="">México – español</option>
+				</select>
+				<p><img src="img/weibo-icon.png" /></p>
+			</div>
+			<div class="footer_bottom">
+				<ul>
+					<li><a href="">网站地图</a></li>
+					<li><a href="">使用条款</a></li>
+					<li><a href="">《隐私政策》</a></li>
+					<li><a href="">我们心系于你</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">新闻中心</a></li>
+					<li><a href="">人才招聘</a></li>
+				</ul>
+				<p><img src="img/small_log.gif"></p>
+				<p>© 2001-2019年，哈雷戴维森(H-D)版权所有。沪ICP备16023812号-3</p>
+				<p class="footer_bottom_p_three">查看所有免责声明</p>
+			</div>
+			
+			<button type="button" class="scroll_top">返回顶部</button>
+			
+		</footer>
+	</body>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script>
+		$('.scroll_top').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});     //页面滚动至顶部
+	
+	</script>
+	
+</html>

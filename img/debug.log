@@ -1,0 +1,13 @@
+[11632:4456:0208/202345:INFO:AppRunner.cpp(720)] loop exit geeplayer call main plugin DestoryPluginEntry
+[11632:4456:0208/202345:INFO:PluginDevelopAssistant.cpp(115)] real plugin mainPlugin call DestroyPlugin
+[11632:4456:0208/202346:INFO:IPlugin.cpp(31)] destruct plugin mainPlugin
+[11632:4456:0208/202346:INFO:serviceManager.cpp(1353)] mainPlugin plugin had destroy by DestructPlugin
+[11632:4456:0208/202346:INFO:serviceManager.cpp(1906)] DestructManager begin
+[11632:4456:0208/202346:INFO:IPlugin.cpp(31)] destruct plugin PluginServerStatePlugin
+[11632:4456:0208/202346:INFO:PluginDevelopAssistant.cpp(295)] real plugin PluginServerStatePlugin call DestroyPlugin
+[11632:4456:0208/202346:INFO:serviceManager.cpp(1353)] PluginServerStatePlugin plugin had destroy by DestructPlugin
+[11632:4456:0208/202346:INFO:serviceManager.cpp(1759)] DeleteLeftPlugins begin
+[11632:4456:0208/202346:INFO:serviceManager.cpp(1822)] DeleteLeftPlugins end
+[11632:4456:0208/202346:INFO:serviceManager.cpp(508)] mainprocessisrunning key is set as 0
+[11632:4456:0208/202346:INFO:AppRunner.cpp(735)] close mutex of process geeplayer
+[11632:4456:0208/202346:INFO:AppRunner.cpp(743)] run process geeplayer end
